@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteBase / 
+RewriteCond %{HTTP_HOST}@@%{HTTP_REFERER} !^(.*?)@@https?://\1/ [NC]
+RewriteRule \.(js|min.js)$ - [F]
